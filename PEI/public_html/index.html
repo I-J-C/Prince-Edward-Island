@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!---->
+<html>
+    <head>
+        <title>Welcome to PEI</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <script language="JavaScript1.1">
+
+// List of all images (relative url)
+            var images = ["img/slider/s1.jpg",
+                    "img/slider/s2.jpg",
+                    "img/slider/s3.jpg",
+                    "img/slider/s4.jpg",
+                    "img/slider/s5.jpg",
+                    "img/slider/s7.jpg",
+                    "img/slider/s8.jpg"];
+
+            var delay = 3000, // delay in ms between consecutive images
+                    image_count = 0, // current image number (will increase to infinity each time "slideshow" is called)
+                    total_images = images.length; // every "total_images"-th image will reset to 0 (using mod operator "%")
+
+// function to be run each "delay" ms
+            function slideshow() {
+                var image_index = image_count % total_images; // the "mod" operator will reset to 0 when needed.
+                document.images.sshow.src = images[image_index]; // set new image. 
+                image_count = image_count + 1; // increase current image index
+                setTimeout("slideshow()", delay); // ask the browser to start the function again in "delay" ms starting from now
+            }
+
+// need to start the function for the first time. It will set the first image again at start and 
+// then next and so on. The first image is also set in HTML.
+            window.onload = new Function("slideshow()");
+
+        </script>
+
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <ul>
+                    <!-- <li><a href="#home">Welcome</a></li>-->
+                    <li><a href="events.html">Festivals &#38; Events</a></li>
+                    <li><a href="packages.html">Travel Packages</a></li>
+                    <li><a href="stay.html">Accomodations</a></li>
+                    <li><a href="do.html">Things To Do</a></li>
+                    <li><a href="about.html">About PEI</a></li>
+
+                </ul>
+            </nav> 
+            <div id="logo"><a href="index.html"><img class="logo" src="img/logo3.jpg" alt="PEI logo"></a>
+
+            </div>
+            <div class="mainImage" id="#homePage">
+                <img class="slider" src="img/slider/s1.jpg" alt="slider" name="sshow"  border="0" >  
+
+            </div>    
+            <div class="mainContent">
+                <div id="transparent">
+                    <h1 class="h1">Welcome to Prince Edward Island</h1> 
+                    <p>
+                        Curabitur pretium tincidunt lacus. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.
+                    </p>
+
+                </div>
+            </div>  
+
+
+            <footer> &copy; 2020 Visit Prince Edward Island </footer>    
+        </div>  
+    </body>
+</html>
