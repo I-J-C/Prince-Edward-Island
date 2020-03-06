@@ -6,25 +6,45 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/main.css">
-        <style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        </style>
+        <script language="JavaScript1.1">
+            function hamburgerMenu() {
+            var x = document.getElementById("nav");
+            if (x.style.display === "flex") {
+            x.style.display = "none";
+            } else {
+            x.style.display = "flex";
+            }
+            }
+
+        </script>
+
     </head>
     <body>
-
-
         <div class="container">
-            <nav>
-                <ul>
-                    <!-- <li><a href="#home">Welcome</a></li>-->
-                    <li><a href="events.html">Festivals &#38; Events</a></li>
-                    <li><a href="packages.html">Travel Packages</a></li>
-                    <li><a href="stay.html">Accomodations</a></li>
-                    <li><a href="do.html">Things To Do</a></li>
-                    <li><a href="about.html">About PEI</a></li>
-                </ul>
-            </nav> 
-            <div id="logo"><a href="index.html"><img class="logo" src="img/logo3.jpg" alt="PEI logo"></a></div>
+            <div class="topNav">
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <div id="hamburger" class="hamburger">
+                    <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <div id="nav" class="nav">
+                    <ul>
+                        <!-- <li><a href="#home">Welcome</a></li>-->
+                        <li><a href="events.html">FESTIVALS &#38; EVENTS</a></li>
+                        <li><a href="packages.html">TRAVEL PACKAGES</a></li>
+                        <li><a href="stay.html">ACCOMODATIONS</a></li>
+                        <li><a href="do.html">THINGS TO DO</a></li>
+                        <li><a href="#PEIfun">#PEIfun</a></li>
+
+                    </ul>
+                </div>
+                <div id="logo" class="active"><a href="index.html"><img class="logo" src="img/logo3.jpg" alt="PEI logo"></a>
+
+                </div>
+            </div>
             <div class="mainImage">
                 <h1>Vacation Packages</h1>
             </div>    
@@ -35,8 +55,8 @@
             </div>
             <div class="row1-col2"> 
                 <a href="package2.html"><img class="imgBox" src="img/romance.jpg" alt="kwi">
-                <br>
-                <button>Romance</button> <br></a>
+                    <br>
+                    <button>Romance</button> <br></a>
             </div>
             <div class="row1-col3"> 
                 <a href="package3.html"><img class="imgBox" src="img/culinary.jpg" alt="kwi">
@@ -45,16 +65,16 @@
             </div>
 
             <div class="row2-col1"> 
-               <a href="puc.html"> <img class="imgBox" src="img/trad.jpg" alt="kwi">
-                   <button>Island Traditions</button> <br></a>
+                <a href="puc.html"> <img class="imgBox" src="img/trad.jpg" alt="kwi">
+                    <button>Island Traditions</button> <br></a>
             </div>
             <div class="row2-col2"> 
-               <a href="puc.html"> <img class="imgBox" src="img/anne.jpg" alt="kwi">
-                   <button>Anne of Green Gables</button> <br></a>
+                <a href="puc.html"> <img class="imgBox" src="img/anne.jpg" alt="kwi">
+                    <button>Anne of Green Gables</button> <br></a>
             </div>
             <div class="row2-col3"> 
-               <a href="puc.html"> <img class="imgBox" src="img/family.jpg" alt="kwi">
-                   <button>Family Focus</button> <br></a>
+                <a href="puc.html"> <img class="imgBox" src="img/family.jpg" alt="kwi">
+                    <button>Family Focus</button> <br></a>
             </div>    
             <div class="row3-col1"> 
                 <a href="puc.html"><img class="imgBox" src="img/golf.jpg" alt="kwi" >
@@ -66,11 +86,11 @@
             </div>
             <div class="row3-col3"> 
                 <a href="puc.html"><img class="imgBox" src="img/more.jpg" alt="kwi" >
-                        <button>Explore More</button></a> <br>
+                    <button>Explore More</button></a> <br>
             </div>
-             
-         
-        <footer> &copy; 2020 Visit Prince Edward Island </footer> 
-    </div>
+
+
+            <footer> &copy; 2020 Visit Prince Edward Island </footer> 
+        </div>
     </body>
 </html>

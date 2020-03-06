@@ -6,26 +6,45 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/main.css">
-        <style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        </style>
+        <script language="JavaScript1.1">
+            function hamburgerMenu() {
+            var x = document.getElementById("nav");
+            if (x.style.display === "flex") {
+            x.style.display = "none";
+            } else {
+            x.style.display = "flex";
+            }
+            }
+
+        </script>
+
     </head>
     <body>
-
-
         <div class="container">
-            <nav>
-                <ul>
-                    <!-- <li><a href="#home">Welcome</a></li>-->
-                    <li><a href="events.html">Festivals &#38; Events</a></li>
-                    <li><a href="packages.html">Travel Packages</a></li>
-                    <li><a href="stay.html">Accomodations</a></li>
-                    <li><a href="do.html">Things To Do</a></li>
-                    <li><a href="about.html">About PEI</a></li>
+            <div class="topNav">
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <div id="hamburger" class="hamburger">
+                    <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <div id="nav" class="nav">
+                    <ul>
+                        <!-- <li><a href="#home">Welcome</a></li>-->
+                        <li><a href="events.html">FESTIVALS &#38; EVENTS</a></li>
+                        <li><a href="packages.html">TRAVEL PACKAGES</a></li>
+                        <li><a href="stay.html">ACCOMODATIONS</a></li>
+                        <li><a href="do.html">THINGS TO DO</a></li>
+                        <li><a href="#PEIfun">#PEIfun</a></li>
 
-                </ul>
-            </nav> 
-            <div id="logo"><a href="index.html"><img class="logo" src="img/logo3.jpg" alt="PEI logo"></a></div>
+                    </ul>
+                </div>
+                <div id="logo" class="active"><a href="index.html"><img class="logo" src="img/logo3.jpg" alt="PEI logo"></a>
+
+                </div>
+            </div>
             <div class="mainImage">
                 <h1>Festivals &#38; Events</h1>
             </div>    
@@ -41,19 +60,19 @@
                 <p>We can’t wait to celebrate with you!</p> 
             </div>  
             <div class="row2-col1"> 
-                <a href="event1.html"><img class="imgBox" src="img/signature.jpg" alt="kwi">
-                    <br>
-                    <button>Signature Events</button> </a><br>
+                <a href="event1.html"><img class="imgBox" src="img/signature.jpg" alt="kwi"></a>
+                <p>Placeholder Text here for Summary</p>
+                <a href="#placeHolder"><button>Signature Events</button> </a><br>
             </div>
             <div class="row2-col2"> 
-                <a href="puc.html"><img class="imgBox" src="img/festivals.jpg" alt="kwi">
-                <br>
-                <button>Festivals</button> <br></a>
+                <a href="puc.html"><img class="imgBox" src="img/festivals.jpg" alt="kwi"></a>
+                <p>Placeholder Text here for Summary</p>
+                <a href="#placeHolder"><button>Festivals</button> <br></a>
             </div>
             <div class="row2-col3"> 
-                <a href="puc.html"><img class="imgBox" src="img/kids.jpg" alt="kwi">
-
-                    <button>Events for Kids</button> <br></a>
+                <a href="puc.html"><img class="imgBox" src="img/kids.jpg" alt="kwi"></a>
+                <p>Placeholder Text here for Summary</p>
+                <a href="#placeHolder"><button>Events for Kids</button> <br></a>
             </div>
 
             <footer> &copy; 2020 Visit Prince Edward Island </footer> 

@@ -6,6 +6,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
         <script language="JavaScript1.1">
 
 // List of all images (relative url)
@@ -33,37 +36,78 @@
 // then next and so on. The first image is also set in HTML.
             window.onload = new Function("slideshow()");
 
+            function hamburgerMenu() {
+            var x = document.getElementById("nav");
+            if (x.style.display === "flex") {
+            x.style.display = "none";
+            } else {
+            x.style.display = "flex";
+            }
+            }
+
         </script>
 
     </head>
     <body>
         <div class="container">
-            <nav>
-                <ul>
-                    <!-- <li><a href="#home">Welcome</a></li>-->
-                    <li><a href="events.html">Festivals &#38; Events</a></li>
-                    <li><a href="packages.html">Travel Packages</a></li>
-                    <li><a href="stay.html">Accomodations</a></li>
-                    <li><a href="do.html">Things To Do</a></li>
-                    <li><a href="about.html">About PEI</a></li>
+            <div class="topNav">
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <div id="hamburger" class="hamburger">
+                <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                </div>
+                <div id="nav" class="nav">
+                    <ul>
+                        <!-- <li><a href="#home">Welcome</a></li>-->
+                        <li><a href="events.html">FESTIVALS &#38; EVENTS</a></li>
+                        <li><a href="packages.html">TRAVEL PACKAGES</a></li>
+                        <li><a href="stay.html">ACCOMODATIONS</a></li>
+                        <li><a href="do.html">THINGS TO DO</a></li>
+                        <li><a href="#PEIfun">#PEIfun</a></li>
 
-                </ul>
-            </nav> 
-            <div id="logo"><a href="index.html"><img class="logo" src="img/logo3.jpg" alt="PEI logo"></a>
+                    </ul>
+                </div>
+                <div id="logo" class="active"><a href="index.html"><img class="logo" src="img/logo3.jpg" alt="PEI logo"></a>
 
+                </div>
+                
             </div>
+            
+            
             <div class="mainImage" id="#homePage">
                 <img class="slider" src="img/slider/s1.jpg" alt="slider" name="sshow"  border="0" >  
 
             </div>    
+            
+            
             <div class="mainContent">
                 <div id="transparent">
                     <h1 class="h1">Welcome to Prince Edward Island</h1> 
-                    <p>
-                        Curabitur pretium tincidunt lacus. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.
-                    </p>
-
                 </div>
+                <p>Prince Edward Island (PEI; French: Île-du-Prince-Édouard) is a province of Canada and one of the three Maritime Provinces. It is the smallest province of Canada in both land area and population, but it is the most densely populated. Part of the traditional lands of the Mi'kmaq, it became a British colony in the 1700s and was federated into Canada as a province in 1873. Its capital is Charlottetown. According to Statistics Canada, the province of PEI has 155,318 residents.</p>
+
+                <p>The island has several informal names: "Garden of the Gulf", referring to the pastoral scenery and lush agricultural lands throughout the province; and "Birthplace of Confederation" or "Cradle of Confederation", referring to the Charlottetown Conference in 1864, although PEI did not join Confederation until 1873, when it became the seventh Canadian province. Historically, PEI is one of Canada's older settlements and demographically still reflects older immigration to the country, with Scottish, Irish, English and French surnames being dominant.</p>
+            </div>
+            <div class="row2-col1"> 
+                <a href="event1.html"><img class="imgBox" src="img/signature.jpg" alt="kwi">
+                    <br>
+                    <button>Signature Events</button> </a><br>
+            </div>
+            <div class="row2-col2"> 
+                <a href="puc.html"><img class="imgBox" src="img/festivals.jpg" alt="kwi">
+                    <br>
+                    <button>Festivals</button> <br></a>
+            </div>
+            <div class="row2-col3"> 
+                <a href="puc.html"><img class="imgBox" src="img/kids.jpg" alt="kwi">
+
+                    <button>Events for Kids</button> <br></a>
+            </div>
+            <div class="mainContent2">
+                <p>PEI is located about 200 kilometres (120 miles) north of Halifax, Nova Scotia, and 600 kilometres (370 miles) east of Quebec City and has a land area of 5,686.03 km2 (2,195.39 sq mi). The main island is 5,620 km2 (2,170 sq mi) in size.[8] It is the 104th-largest island in the world and Canada's 23rd-largest island. </p>
+                <p>The backbone of the island economy is farming; it produces 25% of Canada's potatoes. Other important industries include the fisheries, tourism, aerospace, bio-science, IT, and renewable energy.</p>
+
             </div>  
 
 

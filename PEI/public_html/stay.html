@@ -6,30 +6,49 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/main.css">
-        <style>
-            
-        </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script language="JavaScript1.1">
+            function hamburgerMenu() {
+            var x = document.getElementById("nav");
+            if (x.style.display === "flex") {
+            x.style.display = "none";
+            } else {
+            x.style.display = "flex";
+            }
+            }
+
+        </script>
+
     </head>
     <body>
-        
-          
         <div class="container">
-        <nav>
-            <ul>
-               <!-- <li><a href="#home">Welcome</a></li>-->
-                <li><a href="events.html">Festivals &#38; Events</a></li>
-                    <li><a href="packages.html">Travel Packages</a></li>
-                    <li><a href="stay.html">Accomodations</a></li>
-                    <li><a href="do.html">Things To Do</a></li>
-                    <li><a href="about.html">About PEI</a></li>
-               
-            </ul>
-        </nav> 
-            <div id="logo"><a href="index.html"><img class="logo" src="img/logo3.jpg" alt="PEI logo"></a></div>
+            <div class="topNav">
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <div id="hamburger" class="hamburger">
+                    <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <div id="nav" class="nav">
+                    <ul>
+                        <!-- <li><a href="#home">Welcome</a></li>-->
+                        <li><a href="events.html">FESTIVALS &#38; EVENTS</a></li>
+                        <li><a href="packages.html">TRAVEL PACKAGES</a></li>
+                        <li><a href="stay.html">ACCOMODATIONS</a></li>
+                        <li><a href="do.html">THINGS TO DO</a></li>
+                        <li><a href="#PEIfun">#PEIfun</a></li>
+
+                    </ul>
+                </div>
+                <div id="logo" class="active"><a href="index.html"><img class="logo" src="img/logo3.jpg" alt="PEI logo"></a>
+
+                </div>
+            </div>
             <div class="mainImage">
                 <h1>Where to Stay</h1>
             </div>    
-       <div class="mainContent">
+            <div class="mainContent">
                 <h1>Find Your Perfect Island Getaway</h1>
                 <p>The tourism operators here take great pride in their establishments. Their main goal is to help you have an amazing vacation you will never forget. All of our accommodation listings have been inspected and meet the province’s industry standards.</p>
                 <p>City slicker or more of the outdoorsy type? Not to worry, you will find a great selection of accommodations that will fit your needs! Come on over, and stay awhile.
@@ -42,13 +61,13 @@
             </div>
             <div class="row2-col2"> 
                 <a href="puc.html"><img class="imgBox" src="img/bnb.jpg" alt="kwi">
-                <br>
-                <button>Bed &AMP; Breakfasts</button> <br></a>
+                    <br>
+                    <button>Bed &AMP; Breakfasts</button> <br></a>
             </div>
             <div class="row2-col3"> 
-               <a href="puc.html"><img class="imgBox" src="img/cottage.jpg" alt="kwi">
+                <a href="puc.html"><img class="imgBox" src="img/cottage.jpg" alt="kwi">
 
-                   <button>Cottages</button> <br></a>
+                    <button>Cottages</button> <br></a>
             </div>
             <div class="row3-col1"> 
                 <a href="puc.html"><img class="imgBox" src="img/resort.jpg" alt="kwi">
@@ -57,8 +76,8 @@
             </div>
             <div class="row3-col2"> 
                 <a href="puc.html"><img class="imgBox" src="img/rental.jpg" alt="kwi">
-                <br>
-                <button>Vacation Rentals</button> <br></a>
+                    <br>
+                    <button>Vacation Rentals</button> <br></a>
             </div>
             <div class="row3-col3"> 
                 <a href="puc.html"><img class="imgBox" src="img/camping.jpg" alt="kwi">

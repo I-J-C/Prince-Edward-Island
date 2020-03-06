@@ -44,24 +44,32 @@ body {
     font-family: Candara, georgia, sans-serif;
 
 } 
-nav {
+
+/*--------NAV STYLES--------*/
+.topNav {
     grid-column-start:1;
     grid-column-end: 8;
     grid-row-start: 2;
     grid-row-end: auto; /*3*/
+    display: block;
     z-index: 10;
     background-color: #395c18;
     place-items: center center;
+    position: relative;
 }
 
-nav ul{
+.hamburger {
+    display: none;
+}
+
+.nav ul{
     list-style-type: none;
     margin:0;
     padding: 0;
     overflow: hidden;
     float: right;
 }
-nav li{
+.nav li{
     display: inline-block;
     /*margin-left: 130px;*/
     /* padding-top: 10px;
@@ -69,10 +77,10 @@ nav li{
     
 }
 
-nav a:link, nav a:visited {
+.nav a:link, .nav a:visited {
     display: block;
     /* width: 180px;*/
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     text-decoration: none;
     text-align: center;
     background-color: #395c18;
@@ -84,10 +92,11 @@ nav a:link, nav a:visited {
 
 
 }
-nav a:hover, nav a:active {
+.nav a:hover, nav a:active {
     background-color: #95a453;
     color: #395c18;
 }
+
 .mainImage {
     grid-column-start:1;
     grid-column-end: 8;
@@ -114,10 +123,11 @@ nav a:hover, nav a:active {
     margin-bottom: 0;
 
 }
-
+/*
 #homePage{
     margin-top: 500px;
 }
+*/
 /*.mainImage p {
     z-index: 9;
     color: red;
@@ -130,8 +140,7 @@ nav a:hover, nav a:active {
 
 }*/
 
-#transparent {
-     
+#transparent {f
     font-family: Candara, georgia, sans-serif;
     color: aaa;
     background-color: rgba(255,255,255,.6);
@@ -187,7 +196,7 @@ button {
     grid-row-end: 5;
 }
 
-.mainContent h1 {
+.mainContent h1, .mainContent2 h1 {
     font-family: Candara, georgia, sans-serif;
     font-style: italic;
     font-size: xlarge;
@@ -195,18 +204,24 @@ button {
     
 
 }
-.mainContent h2 {
+.mainContent h2, .mainContent2 h2 {
     font-family: Candara, georgia, sans-serif;
     font-size: large;
     color: #395c18;
 }
 
-.mainContent p{
+.mainContent p, .mainContent2 p{
     font-family: Candara, georgia, sans-serif;
     font-size: large;
     color: #395c18;
 }
 
+.mainContent2 {
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start:3;
+    grid-column-end: 6;
+}
 
 
 .twoColumnLeft {
@@ -356,7 +371,48 @@ footer {
     .container {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        text-align: center;
+    }
+    
+    .topNav {
+        display: block;
+        position: relative;
+    }
+    .logo {
+        top:0;
+        left:0;
+        position: absolute;
+    }
+    
+    /* Style the hamburger menu */
+    .nav li{
+        display; block;
+        width: 100%;
+        text-align: right;
+    }
+    
+    .hamburger {
+        padding-top: 1.3em;
+        padding-bottom: 1.3em;
+        padding-left: 1.3em;
+        padding-right: 0;
+        margin-right: 0;
+        display: block;
+        width: 100%;
+        background-image: url('../img/395C18.jpg');
+    }
+    .topNav a.icon {
+      background:#395c18;
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-size: 2em;
+      color: #95a453;
+    }
+    .nav{
+        display: none;
+    }
+    .nav a:link, .nav a:visited {
+        text-align: right;
     }
 }
