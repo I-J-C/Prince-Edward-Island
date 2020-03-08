@@ -8,9 +8,11 @@
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <link href="css/gallery.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/e05f4d08a0.js" crossorigin="anonymous"></script>
 
         <script language="JavaScript1.1">
             function hamburgerMenu() {
+
             var x = document.getElementById("nav");
             if (x.style.display === "flex") {
             x.style.display = "none";
@@ -18,42 +20,43 @@
             x.style.display = "flex";
             }
             }
-        <button onclick="one()">1</button>
-        <button onclick="two()">2</button>
-        <button onclick="four()">4</button>
-
-        <script>
-        // Get the elements with class="column"
-        var elements = document.getElementsByClassName("column");
             
+            <button onclick="one()">1</button>
+            <button onclick="two()">2</button>
+            <button onclick="four()">4</button>
+
+            <script>
+            // Get the elements with class="column"
+            var elements = document.getElementsByClassName("column");
+
             // Declare a "loop" variable
             var i;
-            
+
             // Full-width images
             function one() {
-                    for (i = 0; i < elements.length; i++) {
+            for (i = 0; i < elements.length; i++) {
             elements[i].style.flex = "100%";
-        }
-        }
-        
-        // Two images side by side
-        function two() {
-                    for (i = 0; i < elements.length; i++) {
+            }
+            }
+
+            // Two images side by side
+            function two() {
+            for (i = 0; i < elements.length; i++) {
             elements[i].style.flex = "50%";
-        }
-        }
-        
-        // Four images side by side
+            }
+            }
+
+            // Four images side by side
             function four() {
-                    for (i = 0; i < elements.length; i++) {
+            for (i = 0; i < elements.length; i++) {
             elements[i].style.flex = "25%";
-                    }
-                    }
-                    
-            </script>
+            }
+            }
+
+        </script>
 
     </head>
-    <body>
+     <body>
         <div class="container">
             <div class="topNav">
                 <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
@@ -124,9 +127,26 @@
                     </div>
                 </div>
             </div>  
-
-
-            <footer> &copy; 2020 Visit Prince Edward Island </footer> 
         </div>  
+        <footer> 
+            <div class="socialMedia">
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/TourismPEI/">
+                            <i class="fab fa-facebook-square"></i>
+                        </a></li>
+                    <li><a href="https://www.instagram.com/tourismpei/?hl=en">
+                            <i class="fab fa-instagram-square"></i>
+                        </a></li>
+                    <li><a href="https://twitter.com/TravelMediaPEI">
+                            <i class="fab fa-twitter-square"></i>
+                        </a></li>
+                    <li><a href="https://www.pinterest.ca/tourismpei/">
+                            <i class="fab fa-pinterest-square"></i>
+                        </a></li>
+                </ul>
+            </div>
+            <div class="copyright">&copy; 2020 Visit Prince Edward Island</div> 
+        </footer>
     </body>
 </html>

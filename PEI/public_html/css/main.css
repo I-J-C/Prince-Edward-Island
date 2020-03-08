@@ -1,3 +1,10 @@
+html {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 #logo {
     grid-column-start: 3;
     grid-column-end: 4;
@@ -9,6 +16,7 @@
 }
 
 body {
+    flex: 1 1 auto;
     margin: 0;
 }
 
@@ -30,7 +38,7 @@ body {
     display: grid;
     position: relative;
     grid-template-columns:20px 30px 1fr 1fr 1fr 30px 20px;
-    grid-template-rows: 20px 40px 450px auto auto auto 30px 40px; 
+    grid-template-rows: 20px 40px 450px auto auto auto 30px;
     justify-content: space-evenly;
     grid-auto-rows: min-content;
     /* place-items: center center;*/
@@ -281,19 +289,70 @@ button {
     height: auto;
     border: 10px solid #ffffff;    
     z-index: 1;}
+
+
+
+
 footer {
-    grid-column-start:1;
-    grid-column-end: 8;
-    grid-row-start: 8;
-    grid-row-end: 9;
-    z-index: 10;
+    flex: 1 1 auto;
     background-color: #395c18;
-    padding-left: 20px;
-    padding-top: 10px;
     color: #95a453;
     font-weight: bold;
     font-family: Candara, georgia, sans-serif;
     letter-spacing: 3px;
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: space-between;
+    vertical-align: central;
+    width: 100%;
+    height: auto;
+}
+
+.socialMedia {
+    flex: 1 1 auto;
+    width: 50%;
+    text-align: center;
+    flex-shrink: 1;
+    font-size: 2em;
+    flex-grow: 1;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.socialMedia li {
+    flex: 1 1 auto;
+    flex-shrink: 1;
+    list-style-type: none;
+    display: inline-block;
+    letter-spacing: 1.5em;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0;
+}
+
+.socialMedia a:link, .socialMedia a:visited {
+    text-decoration: none;
+    text-align: center;
+    background-color: #395c18;
+    color: #95a453;
+}
+.socialMedia a:hover, .socialMedia a:active {
+    color: #213c08;
+    transition: .3s;
+}
+
+.copyright {
+    flex: 1 1 auto;
+    width: 50%;
+    text-align: right;
+    margin-right: 2em;
+    margin-top: auto;
+    margin-bottom: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+    font-size: 1.3em;
 }
 
 .row1-col1 {
@@ -391,7 +450,6 @@ footer {
 
     /* Style the hamburger menu */
     .nav li{
-        display: block;
         width: 100%;
         text-align: right;
     }
@@ -420,5 +478,32 @@ footer {
     }
     .nav a:link, .nav a:visited {
         text-align: right;
+    }
+    
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .socialMedia {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        vertical-align: middle;
+    }
+    
+    .copyright {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        margin-right: auto;
+        margin-left: auto;
+        vertical-align: middle;
+        font-size: 1.1em;
+        text-align: center;
+        padding-bottom: 15px;
+        padding-top: 0;
     }
 }

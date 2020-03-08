@@ -8,6 +8,7 @@ and open the template in the editor.
     Author     : ilkac
 */
 
+/*Specifically to prevent the slider overlapping with the original hero image */
 .mainImage {
     background-image: none;
 }

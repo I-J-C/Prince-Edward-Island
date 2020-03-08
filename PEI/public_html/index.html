@@ -8,40 +8,43 @@
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
+        <script src="https://kit.fontawesome.com/e05f4d08a0.js" crossorigin="anonymous"></script>
+
         <script language="JavaScript1.1">
 
-// List of all images (relative url)
+            // List of all images (relative url)
             var images = ["img/slider/s1.jpg",
-                    "img/slider/s2.jpg",
-                    "img/slider/s3.jpg",
-                    "img/slider/s4.jpg",
-                    "img/slider/s5.jpg",
-                    "img/slider/s7.jpg",
-                    "img/slider/s8.jpg"];
+            "img/slider/s2.jpg",
+            "img/slider/s3.jpg",
+            "img/slider/s4.jpg",
+            "img/slider/s5.jpg",
+            "img/slider/s7.jpg",
+            "img/slider/s8.jpg"];
 
             var delay = 3000, // delay in ms between consecutive images
-                    image_count = 0, // current image number (will increase to infinity each time "slideshow" is called)
-                    total_images = images.length; // every "total_images"-th image will reset to 0 (using mod operator "%")
+            image_count = 0, // current image number (will increase to infinity each time "slideshow" is called)
+            total_images = images.length; // every "total_images"-th image will reset to 0 (using mod operator "%")
 
-// function to be run each "delay" ms
+            // function to be run each "delay" ms
             function slideshow() {
-                var image_index = image_count % total_images; // the "mod" operator will reset to 0 when needed.
-                document.images.sshow.src = images[image_index]; // set new image. 
-                image_count = image_count + 1; // increase current image index
-                setTimeout("slideshow()", delay); // ask the browser to start the function again in "delay" ms starting from now
+            var image_index = image_count % total_images; // the "mod" operator will reset to 0 when needed.
+            document.images.sshow.src = images[image_index]; // set new image. 
+            image_count = image_count + 1; // increase current image index
+            setTimeout("slideshow()", delay); // ask the browser to start the function again in "delay" ms starting from now
             }
 
-// need to start the function for the first time. It will set the first image again at start and 
-// then next and so on. The first image is also set in HTML.
+            // need to start the function for the first time. It will set the first image again at start and 
+            // then next and so on. The first image is also set in HTML.
             window.onload = new Function("slideshow()");
 
             function hamburgerMenu() {
+
             var x = document.getElementById("nav");
             if (x.style.display === "flex") {
             x.style.display = "none";
             } else {
             x.style.display = "flex";
+            x.style.textAlign = "right";
             }
             }
 
@@ -53,9 +56,9 @@
             <div class="topNav">
                 <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
                 <div id="hamburger" class="hamburger">
-                <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
-                    <i class="fa fa-bars"></i>
-                </a>
+                    <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
+                        <i class="fa fa-bars"></i>
+                    </a>
                 </div>
                 <div id="nav" class="nav">
                     <ul>
@@ -64,23 +67,20 @@
                         <li><a href="packages.html">TRAVEL PACKAGES</a></li>
                         <li><a href="stay.html">ACCOMODATIONS</a></li>
                         <li><a href="do.html">THINGS TO DO</a></li>
-                        <li><a href="#PEIfun">#PEIfun</a></li>
+                        <li><a href="peifun.html">&#35;PEIfun</a></li>
 
                     </ul>
                 </div>
                 <div id="logo" class="active"><a href="index.html"><img class="logo" src="img/logo3.jpg" alt="PEI logo"></a>
 
                 </div>
-                
             </div>
-            
-            
             <div class="mainImage" id="#homePage">
                 <img class="slider" src="img/slider/s1.jpg" alt="slider" name="sshow"  border="0" >  
 
             </div>    
-            
-            
+
+
             <div class="mainContent">
                 <div id="transparent">
                     <h1 class="h1">Welcome to Prince Edward Island</h1> 
@@ -89,29 +89,48 @@
 
                 <p>The island has several informal names: "Garden of the Gulf", referring to the pastoral scenery and lush agricultural lands throughout the province; and "Birthplace of Confederation" or "Cradle of Confederation", referring to the Charlottetown Conference in 1864, although PEI did not join Confederation until 1873, when it became the seventh Canadian province. Historically, PEI is one of Canada's older settlements and demographically still reflects older immigration to the country, with Scottish, Irish, English and French surnames being dominant.</p>
             </div>
+
+            <!--Links to be Determined-->
             <div class="row2-col1"> 
-                <a href="event1.html"><img class="imgBox" src="img/signature.jpg" alt="kwi">
+                <a href="puc.html"><img class="imgBox" src="img/where.jpg" alt="kwi" >
                     <br>
-                    <button>Signature Events</button> </a><br>
+                    <button>Where is PEI?</button><br></a>
             </div>
             <div class="row2-col2"> 
-                <a href="puc.html"><img class="imgBox" src="img/festivals.jpg" alt="kwi">
+                <a href="puc.html"><img class="imgBox" src="img/gethere.jpg" alt="kwi" >
                     <br>
-                    <button>Festivals</button> <br></a>
+                    <button>Getting Here</button> <br></a>
             </div>
             <div class="row2-col3"> 
-                <a href="puc.html"><img class="imgBox" src="img/kids.jpg" alt="kwi">
+                <a href="puc.html"><img class="imgBox" src="img/guide.jpg" alt="kwi" >
 
-                    <button>Events for Kids</button> <br></a>
+                    <button>PEI Visitor's Guide</button> <br></a>
             </div>
             <div class="mainContent2">
                 <p>PEI is located about 200 kilometres (120 miles) north of Halifax, Nova Scotia, and 600 kilometres (370 miles) east of Quebec City and has a land area of 5,686.03 km2 (2,195.39 sq mi). The main island is 5,620 km2 (2,170 sq mi) in size.[8] It is the 104th-largest island in the world and Canada's 23rd-largest island. </p>
                 <p>The backbone of the island economy is farming; it produces 25% of Canada's potatoes. Other important industries include the fisheries, tourism, aerospace, bio-science, IT, and renewable energy.</p>
 
-            </div>  
-
-
-            <footer> &copy; 2020 Visit Prince Edward Island </footer>    
+            </div>
         </div>  
+        <footer> 
+            <div class="socialMedia">
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/TourismPEI/">
+                            <i class="fab fa-facebook-square"></i>
+                        </a></li>
+                    <li><a href="https://www.instagram.com/tourismpei/?hl=en">
+                            <i class="fab fa-instagram-square"></i>
+                        </a></li>
+                    <li><a href="https://twitter.com/TravelMediaPEI">
+                            <i class="fab fa-twitter-square"></i>
+                        </a></li>
+                    <li><a href="https://www.pinterest.ca/tourismpei/">
+                            <i class="fab fa-pinterest-square"></i>
+                        </a></li>
+                </ul>
+            </div>
+            <div class="copyright">&copy; 2020 Visit Prince Edward Island</div> 
+        </footer>    
     </body>
 </html>
