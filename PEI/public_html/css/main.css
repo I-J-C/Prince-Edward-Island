@@ -9,7 +9,7 @@
 }
 
 body {
-     margin: 0;
+    margin: 0;
 }
 
 .logo {
@@ -35,9 +35,9 @@ body {
     grid-auto-rows: min-content;
     /* place-items: center center;*/
     /*align-content:center;*/
-    
+
     /*grid-gap: 10px;*/
-    
+
     top: 0px;
     left: 0px;
     width: 100%;
@@ -74,7 +74,7 @@ body {
     /*margin-left: 130px;*/
     /* padding-top: 10px;
      padding-bottom: 10px;*/
-    
+
 }
 
 .nav a:link, .nav a:visited {
@@ -113,7 +113,7 @@ body {
     z-index: 10;
     color: rgba(255,255,255,.7);
     -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
+    -webkit-text-stroke-color: black;
     text-align: right;
     font-size: 5em;
     font-family: Candara, georgia, sans-serif;
@@ -140,7 +140,7 @@ body {
 
 }*/
 
-#transparent {f
+#transparent {
     font-family: Candara, georgia, sans-serif;
     color: aaa;
     background-color: rgba(255,255,255,.6);
@@ -154,9 +154,9 @@ body {
 }
 
 .h1{
-        color: rgba(255,255,255,.7);
+    color: rgba(255,255,255,.7);
     -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #213c08;
+    -webkit-text-stroke-color: #213c08;
 }
 
 
@@ -201,7 +201,7 @@ button {
     font-style: italic;
     font-size: xlarge;
     color: #7cae4d;
-    
+
 
 }
 .mainContent h2, .mainContent2 h2 {
@@ -230,7 +230,7 @@ button {
     grid-row-start: 4;
     grid-row-end: 5;
     padding: 20px;
-    
+
 }
 
 .twoColumnLeft img {
@@ -366,13 +366,19 @@ footer {
     grid-row-start: 6;
     grid-row-end: 7;
 }
+.gallery {
+    grid-column-start:1;
+    grid-column-end: 8;
+    grid-row-start: 4;
+    grid-row-end: 8; 
+}
 
 @Media (max-width: 767px) {
     .container {
         display: flex;
         flex-direction: column;
     }
-    
+
     .topNav {
         display: block;
         position: relative;
@@ -382,14 +388,14 @@ footer {
         left:0;
         position: absolute;
     }
-    
+
     /* Style the hamburger menu */
     .nav li{
-        display; block;
+        display: block;
         width: 100%;
         text-align: right;
     }
-    
+
     .hamburger {
         padding-top: 1.3em;
         padding-bottom: 1.3em;
@@ -401,13 +407,13 @@ footer {
         background-image: url('../img/395C18.jpg');
     }
     .topNav a.icon {
-      background:#395c18;
-      display: block;
-      position: absolute;
-      right: 0;
-      top: 0;
-      font-size: 2em;
-      color: #95a453;
+        background:#395c18;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 2em;
+        color: #95a453;
     }
     .nav{
         display: none;
