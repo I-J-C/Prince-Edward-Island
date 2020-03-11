@@ -61,7 +61,7 @@ body {
     grid-row-end: auto; /*3*/
     display: block;
     z-index: 10;
-    background-color: #395c18;
+    background-color: #213c08;
     place-items: center center;
     position: relative;
 }
@@ -91,7 +91,7 @@ body {
     /*text-transform: uppercase;*/
     text-decoration: none;
     text-align: center;
-    background-color: #395c18;
+    background-color: #213c08;
     color: #95a453;
     font-family: Candara, georgia, sans-serif;
     font-weight: bold;
@@ -177,6 +177,12 @@ body {
     z-index: -1;
 }
 
+.p {
+    width: 95%;
+    height: auto;
+    margin-left: 2%;
+}
+
 button {
     background-color: #eee;
     width: 200px;
@@ -230,7 +236,6 @@ button {
     grid-column-start:3;
     grid-column-end: 6;
 }
-
 
 .twoColumnLeft {
     grid-column-start:3;
@@ -295,7 +300,7 @@ button {
 
 footer {
     flex: 1 1 auto;
-    background-color: #395c18;
+    background-color: #213c08;
     color: #95a453;
     font-weight: bold;
     font-family: Candara, georgia, sans-serif;
@@ -335,11 +340,11 @@ footer {
 .socialMedia a:link, .socialMedia a:visited {
     text-decoration: none;
     text-align: center;
-    background-color: #395c18;
+    background-color: #213c08;
     color: #95a453;
 }
 .socialMedia a:hover, .socialMedia a:active {
-    color: #213c08;
+    color: white;
     transition: .3s;
 }
 
@@ -462,10 +467,10 @@ footer {
         margin-right: 0;
         display: block;
         width: 100%;
-        background-image: url('../img/395C18.jpg');
+        background-image: url('../img/213C08.jpg');
     }
     .topNav a.icon {
-        background:#395c18;
+        background:#213c08;
         display: block;
         position: absolute;
         right: 0;
@@ -505,5 +510,9 @@ footer {
         text-align: center;
         padding-bottom: 15px;
         padding-top: 0;
+    }
+    p, h1 {
+        padding-left: 3%;
+        padding-right: 3%;
     }
 }
