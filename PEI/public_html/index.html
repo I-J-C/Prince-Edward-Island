@@ -12,39 +12,39 @@
 
         <script language="JavaScript1.1">
 
-            // List of all images (relative url)
+// List of all images (relative url)
             var images = ["img/slider/s1.jpg",
-            "img/slider/s2.jpg",
-            "img/slider/s3.jpg",
-            "img/slider/s4.jpg",
-            "img/slider/s5.jpg",
-            "img/slider/s7.jpg",
-            "img/slider/s8.jpg"];
+                "img/slider/s2.jpg",
+                "img/slider/s3.jpg",
+                "img/slider/s4.jpg",
+                "img/slider/s5.jpg",
+                "img/slider/s7.jpg",
+                "img/slider/s8.jpg"];
 
             var delay = 3000, // delay in ms between consecutive images
-            image_count = 0, // current image number (will increase to infinity each time "slideshow" is called)
-            total_images = images.length; // every "total_images"-th image will reset to 0 (using mod operator "%")
+                    image_count = 0, // current image number (will increase to infinity each time "slideshow" is called)
+                    total_images = images.length; // every "total_images"-th image will reset to 0 (using mod operator "%")
 
-            // function to be run each "delay" ms
+// function to be run each "delay" ms
             function slideshow() {
-            var image_index = image_count % total_images; // the "mod" operator will reset to 0 when needed.
-            document.images.sshow.src = images[image_index]; // set new image. 
-            image_count = image_count + 1; // increase current image index
-            setTimeout("slideshow()", delay); // ask the browser to start the function again in "delay" ms starting from now
+                var image_index = image_count % total_images; // the "mod" operator will reset to 0 when needed.
+                document.images.sshow.src = images[image_index]; // set new image. 
+                image_count = image_count + 1; // increase current image index
+                setTimeout("slideshow()", delay); // ask the browser to start the function again in "delay" ms starting from now
             }
 
-            // need to start the function for the first time. It will set the first image again at start and 
-            // then next and so on. The first image is also set in HTML.
+// need to start the function for the first time. It will set the first image again at start and 
+// then next and so on. The first image is also set in HTML.
             window.onload = new Function("slideshow()");
 
+        </script>
+                <script language="JavaScript1.1">
             function hamburgerMenu() {
-
             var x = document.getElementById("nav");
             if (x.style.display === "flex") {
             x.style.display = "none";
             } else {
             x.style.display = "flex";
-            x.style.textAlign = "right";
             }
             }
 
@@ -71,7 +71,7 @@
 
                     </ul>
                 </div>
-                <div id="logo" class="active"><a href="index.html"><img class="logo" src="img/logo3.jpg" alt="PEI logo"></a>
+                <div id="logo" class="active"><a href="index.html"><img class="logo" src="img/logo.png" alt="PEI logo"></a>
 
                 </div>
             </div>
@@ -82,7 +82,7 @@
 
             <div class="mainContent">
                 <div id="transparent">
-                    <h1 class="h1">Welcome to Prince Edward Island</h1> 
+                    <h1>Welcome to Prince Edward Island</h1> 
                 </div>
                 <p>Prince Edward Island (PEI; French: Île-du-Prince-Édouard) is a province of Canada and one of the three Maritime Provinces. It is the smallest province of Canada in both land area and population, but it is the most densely populated. Part of the traditional lands of the Mi'kmaq, it became a British colony in the 1700s and was federated into Canada as a province in 1873. Its capital is Charlottetown. According to Statistics Canada, the province of PEI has 155,318 residents.</p>
 

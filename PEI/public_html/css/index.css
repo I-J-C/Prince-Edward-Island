@@ -9,11 +9,13 @@ and open the template in the editor.
 */
 
 /*Specifically to prevent the slider overlapping with the original hero image */
+
 .mainImage {
     background-image: url('../img/slider/s1.jpg');
 }
+
 .mainImage .slider {
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
     object-fit: cover;
 }
